@@ -117,7 +117,7 @@ define([
     };
 
     if (appendTo !== undefined) {
-	opts.appendTo = appendTo;
+      opts.appendTo = appendTo;
     }
 
 
@@ -196,7 +196,7 @@ define([
       'top': '10px',
       'right': '5px'
     }).button(
-	{showLabel: false, icon: 'ui-icon-circle-arrow-s'}
+      {showLabel: false, icon: 'ui-icon-circle-arrow-s'}
     ).attr('title', 'Download Scree Plot');
     this.$_screePlotContainer.append(this.$saveButton);
 
