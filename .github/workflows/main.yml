@@ -4,10 +4,16 @@ name: Emperor CI
 on:
   # Triggers the workflow on pull request and push events, only on the master
   # branch
-  pull_request:
-    branches: [ master ]
   push:
-    branches: [ master ]
+    branches:
+      - '*'
+    workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
 
 jobs:
   # name of job
