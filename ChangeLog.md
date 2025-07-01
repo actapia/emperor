@@ -13,7 +13,9 @@ Emperor ChangeLog
 * Update Python unit tests for new Pandas versions.
 * Remove EOL Python version `3.7` from test matrix in CI workflow.
 * Apply a workaround (`OPENSSL_CONF=/dev/null`) for running PhantomJS on `ubuntu-latest` in CI workflow.
-
+* Update QUnit to the newest stable version, 2.24.
+* Fix QUnit tests to work with jQuery 3 and QUnit 2.
+* Replace PhantomJS in CI workflow with node-qunit-puppeteer.
 
 # Emperor 1.0.4 (10 Jul 2023)
 -----------------------------
